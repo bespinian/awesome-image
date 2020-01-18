@@ -1,45 +1,20 @@
 <!DOCTYPE html>
-<html lang="en" class="blink-bg">
+<html lang="en" style="background-color:#3273dc">
   <head>
-    <style>
-      .blink-bg {
-        color: #fff;
-        padding: 10px;
-        display: inline-block;
-        border-radius: 5px;
-        animation: blinkingBackground 2s infinite;
-      }
-      @keyframes blinkingBackground {
-        0% {
-          background-color: #10c018;
-        }
-        25% {
-          background-color: #1056c0;
-        }
-        50% {
-          background-color: #ef0a1a;
-        }
-        75% {
-          background-color: #254878;
-        }
-        100% {
-          background-color: #04a1d5;
-        }
-      }
-    </style>
     <link
       href="http://fonts.googleapis.com/css?family=Lato:400,700"
       rel="stylesheet"
       type="text/css"
     />
     <meta charset="utf-8" />
-    <title>Something awesome</title>
+    <title>$APP_TITLE</title>
   </head>
   <body style="font-family: 'Lato', sans-serif;font-size:120px;color:#fff">
+    <h3>$APP_TITLE</h3>
     <div style="padding-left: 40%;">
-      <ul>
-        <li>$MESSAGE_1</li>
-        <li>$MESSAGE_2</li>
+      <ul style="list-style-type:none">
+        <li>DB host: $DB_HOST</li>
+        <li>App version: $APP_VERSION</li>
       </ul>
     </div>
   </body>
